@@ -1,0 +1,5 @@
+<h1>Wanna know famous quotes?</h1>
+<button (click)="fetchAnecdote()">Get those quotes!</button>
+<ul> 
+    <li *ngFor="let anecdote of anecdote$ | async"><b>{{ anecdote.character }}</b>: {{ anecdote.quote}}</li>
+</ul>
